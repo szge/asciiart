@@ -34,7 +34,7 @@ length = len(foreground_lines[0]) // 11
 foreground_lines = ["\\u001b[97m " * length] * offset_y + foreground_lines
 foreground = "\n".join(foreground_lines)
 
-background = AsciiArt.from_image('abs8.jpg').to_ascii(columns=150)
+background = AsciiArt.from_image('images/abs8.jpg').to_ascii(columns=150)
 # print(background)
 background = escape_colors(background)
 # print(background)
